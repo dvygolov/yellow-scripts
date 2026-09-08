@@ -1,0 +1,1927 @@
+[
+  {
+    "id": 1,
+    "title": "Форма MoneyCrafter",
+    "runtime": "PHP + HTML; возможен JS-порт",
+    "description": "Встраиваемая форма с заголовком, цветом и sub1 в URL.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/moneycrafter",
+      "https://t.me/yellow_web/13"
+    ],
+    "sourceRevision": null,
+    "slug": "moneycrafter",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/moneycrafter",
+      "https://t.me/yellow_web/13"
+    ],
+    "version": "1.0.0",
+    "demo": true,
+    "demoKind": "JS-адаптация",
+    "instructions": [
+      "Подключите moneycrafter.js перед закрывающим </body>. Создайте пустой контейнер для формы.",
+      "Вызовите initMoneyCrafter({ selector: \"#moneycrafter\", title: \"Оставьте заявку\", color: \"#218575\", action: \"/order.php\", sub1: \"...\" }).",
+      "Укажите существующий серверный обработчик в action. Сам скрипт не отправляет письма и не подключает API партнёрки.",
+      "Для iframe используйте embed.html?color=218575&h1=Оставьте%20заявку&sub1=example&action=/order.php. Обработчик должен находиться на домене встроенной формы; демонстрационный хост отправку блокирует."
+    ],
+    "cautions": [
+      "Адаптация найденной PHP/iframe-формы для статического сайта. Исходный order.php в архиве отсутствует."
+    ],
+    "files": [
+      {
+        "name": "embed.html",
+        "url": "/demos/moneycrafter/embed.html"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/moneycrafter/index.html"
+      },
+      {
+        "name": "moneycrafter.js",
+        "url": "/demos/moneycrafter/moneycrafter.js"
+      },
+      {
+        "name": "Исходный PHP",
+        "url": "/sources/moneycrafter/original.php.txt"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Универсальная форма Адама",
+    "runtime": "HTML + JS",
+    "description": "Форма заказа с таймером, всплывающим окном при уходе мыши и прокруткой к форме.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/adam-form"
+    ],
+    "sourceRevision": null,
+    "slug": "adam-form",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/adam-form"
+    ],
+    "version": "пример a164e4b",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Перенесите form-files и HTML формы из index.html на лендинг.",
+      "Укажите action вашего обработчика; настройте цену, подписи и исходное время таймера. jQuery подключается один раз."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/adam-form/index.html"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Четыре шаблона форм заказа",
+    "runtime": "HTML + CSS",
+    "description": "Четыре оформления формы: один пункт каталога с переключением вариантов.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/order-forms"
+    ],
+    "sourceRevision": null,
+    "slug": "order-forms",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/order-forms"
+    ],
+    "version": "пример c746cfe",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Выберите один из четырёх вариантов и скопируйте его папку.",
+      "Перенесите HTML формы, CSS и связанные изображения. Укажите action и необходимые скрытые поля партнёрки."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/order-forms/index.html"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "YellowQuiz",
+    "runtime": "JS",
+    "description": "Пошаговый квиз, настраиваемый структурой вопросов и ответов.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/yellowquiz",
+      "https://github.com/dvygolov/YWB.YellowQuiz.JS",
+      "https://t.me/yellow_web/363"
+    ],
+    "sourceRevision": "ae21e84320b81d81d04b619cc5fe3afdb95794a0",
+    "slug": "yellowquiz",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/yellowquiz",
+      "https://github.com/dvygolov/YWB.YellowQuiz.JS",
+      "https://t.me/yellow_web/363"
+    ],
+    "version": "rev. ae21e84",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/yellowquiz/index.html"
+      },
+      {
+        "name": "ywbquiz.css",
+        "url": "/demos/yellowquiz/ywbquiz.css"
+      },
+      {
+        "name": "ywbquiz.js",
+        "url": "/demos/yellowquiz/ywbquiz.js"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Callbacker",
+    "runtime": "JS",
+    "description": "Плавающая кнопка звонка и форма заявки в попапе.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/callbacker",
+      "https://github.com/dvygolov/YWB.Callbacker.JS",
+      "https://t.me/yellow_web/834"
+    ],
+    "sourceRevision": "c3a5b1b4242243d47e8b2824be12d123ed6c12ed",
+    "slug": "callbacker",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/callbacker",
+      "https://github.com/dvygolov/YWB.Callbacker.JS",
+      "https://t.me/yellow_web/834"
+    ],
+    "version": "rev. c3a5b1b",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/callbacker/index.html"
+      },
+      {
+        "name": "ywbcallbacker.css",
+        "url": "/demos/callbacker/ywbcallbacker.css"
+      },
+      {
+        "name": "ywbcallbacker.js",
+        "url": "/demos/callbacker/ywbcallbacker.js"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Comebacker",
+    "runtime": "JS",
+    "description": "Попап при выходе курсора за верхнюю границу страницы.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/comebacker",
+      "https://github.com/dvygolov/landingscripts",
+      "https://t.me/yellow_web/57"
+    ],
+    "sourceRevision": "fc0bd3f31529cd98a256546476c73f5ce0c29046",
+    "slug": "comebacker",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/comebacker",
+      "https://github.com/dvygolov/landingscripts",
+      "https://t.me/yellow_web/57"
+    ],
+    "version": "rev. fc0bd3f",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/comebacker/index.html"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Таймер обратного отсчёта",
+    "runtime": "JS",
+    "description": "Обратный отсчёт с настраиваемым временем.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/countdown",
+      "https://gist.github.com/ywbsrp/fb6b9c6f5850694f9e4f89c97eea61d5",
+      "https://t.me/yellow_web/55"
+    ],
+    "sourceRevision": null,
+    "slug": "countdown",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/countdown",
+      "https://gist.github.com/ywbsrp/fb6b9c6f5850694f9e4f89c97eea61d5",
+      "https://t.me/yellow_web/55"
+    ],
+    "version": "пример cb495a4",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "countdowntimer.js",
+        "url": "/demos/countdown/countdowntimer.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/countdown/index.html"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Плавающая кнопка заказа",
+    "runtime": "HTML + JS/CSS",
+    "description": "Закреплённая кнопка перехода к форме.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/sticky-button",
+      "https://gist.github.com/dvygolov/72056329981d987321aebb0e54d3a5bf",
+      "https://codepen.io/dvygolov/pen/xxLJmrN",
+      "https://t.me/yellow_web/542"
+    ],
+    "sourceRevision": null,
+    "slug": "sticky-button",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/sticky-button",
+      "https://gist.github.com/dvygolov/72056329981d987321aebb0e54d3a5bf",
+      "https://codepen.io/dvygolov/pen/xxLJmrN",
+      "https://t.me/yellow_web/542"
+    ],
+    "version": "пример febcf9f",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/sticky-button/index.html"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Коробки с призом",
+    "runtime": "JS",
+    "description": "Выбор коробки, сообщение о результате, открытие существующей формы.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/gift-boxes",
+      "https://github.com/dvygolov/YWB.GiftBoxes.JS",
+      "https://t.me/yellow_web/770"
+    ],
+    "sourceRevision": "44fc549461465e93acf05ee487573e567a47f8f8",
+    "slug": "gift-boxes",
+    "category": "Игровые механики",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/gift-boxes",
+      "https://github.com/dvygolov/YWB.GiftBoxes.JS",
+      "https://t.me/yellow_web/770"
+    ],
+    "version": "rev. 44fc549",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/gift-boxes/index.html"
+      },
+      {
+        "name": "ywbboxes.css",
+        "url": "/demos/gift-boxes/ywbboxes.css"
+      },
+      {
+        "name": "ywbboxes.js",
+        "url": "/demos/gift-boxes/ywbboxes.js"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Двери",
+    "runtime": "JS",
+    "description": "Три двери, выбор и показ скидки с формой.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/doors",
+      "https://github.com/dvygolov/YWB.Doors.JS",
+      "https://t.me/yellow_web/829"
+    ],
+    "sourceRevision": "f9d0709cb28616a1c69989f5f6df7263c3996718",
+    "slug": "doors",
+    "category": "Игровые механики",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/doors",
+      "https://github.com/dvygolov/YWB.Doors.JS",
+      "https://t.me/yellow_web/829"
+    ],
+    "version": "rev. f9d0709",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/doors/index.html"
+      },
+      {
+        "name": "ywbdoors.css",
+        "url": "/demos/doors/ywbdoors.css"
+      },
+      {
+        "name": "ywbdoors.js",
+        "url": "/demos/doors/ywbdoors.js"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Мешки / 3 из 5",
+    "runtime": "JS",
+    "description": "Игровой выбор мешков с последующим показом формы.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/bags",
+      "https://github.com/dvygolov/YWB.3from5.JS",
+      "https://t.me/yellow_web/1558"
+    ],
+    "sourceRevision": "23d6cec0661ccafce95130667eb8b62cb1041b10",
+    "slug": "bags",
+    "category": "Игровые механики",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/bags",
+      "https://github.com/dvygolov/YWB.3from5.JS",
+      "https://t.me/yellow_web/1558"
+    ],
+    "version": "rev. 23d6cec",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [
+      "Вызов внешнего startTimer сделан необязательным: в исходном примере таймер не входил в комплект."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/bags/index.html"
+      },
+      {
+        "name": "ywb3from5.css",
+        "url": "/demos/bags/ywb3from5.css"
+      },
+      {
+        "name": "ywb3from5.js",
+        "url": "/demos/bags/ywb3from5.js"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Рулетка CPARIP / WheelSpin",
+    "runtime": "JS",
+    "description": "Колесо, результат и открытие формы.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/roulette",
+      "https://cpa.rip/stati/roulette-script/"
+    ],
+    "sourceRevision": null,
+    "slug": "roulette",
+    "category": "Игровые механики",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/roulette",
+      "https://cpa.rip/stati/roulette-script/"
+    ],
+    "version": "1.0.0",
+    "demo": true,
+    "demoKind": "Новая init-адаптация",
+    "instructions": [
+      "Скопируйте ywbroulette.js, ywbroulette.css и prizewheel.png. Подключите CSS в <head>, JS после HTML контейнеров.",
+      "Создайте отдельные #roulette и #roulette-form. Вызовите initRoulette({ selectors: { roulette: \"#roulette\", form: \"#roulette-form\" } }).",
+      "Тексты задаются в texts, длительность в duration (мс), изображение в image. onResult вызывается после вращения, onComplete после подтверждения. Возвращаемый объект содержит state, spin() и destroy().",
+      "stopAngle задаёт финальный угол. Текст результата должен соответствовать выбранному сектору изображения. По умолчанию это заданная скидка, не случайный розыгрыш."
+    ],
+    "cautions": [
+      "Графика исходной рулетки CPARIP, новый JS-модуль. Повторный вызов для того же контейнера возвращает существующий экземпляр."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/roulette/index.html"
+      },
+      {
+        "name": "ywbroulette.css",
+        "url": "/demos/roulette/ywbroulette.css"
+      },
+      {
+        "name": "ywbroulette.js",
+        "url": "/demos/roulette/ywbroulette.js"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Drewlex",
+    "runtime": "JS",
+    "description": "Набор форм, рулетки, комментариев и других элементов прелендинга.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/drewlex",
+      "https://github.com/dvygolov/Drewlex.JS",
+      "https://yellowweb.top/kak-zamenit-komandu-verstalshhikov-odnim-skriptom-gotovyj-nabor-dlya-povysheniya-konversii-prelendingov/"
+    ],
+    "sourceRevision": "d2fd057bc45eb5c189f1ffb77216cf7dc0bff485",
+    "slug": "drewlex",
+    "category": "Игровые механики",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/drewlex",
+      "https://github.com/dvygolov/Drewlex.JS",
+      "https://yellowweb.top/kak-zamenit-komandu-verstalshhikov-odnim-skriptom-gotovyj-nabor-dlya-povysheniya-konversii-prelendingov/"
+    ],
+    "version": "rev. d2fd057",
+    "demo": true,
+    "demoKind": "Исходный Drewlex",
+    "instructions": [
+      "Откройте Drewlex.JS на GitHub и выберите нужный компонент.",
+      "Подключение конкретных компонентов разобрано в отдельной статье Жёлтого Веба по ссылке ниже."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "drewlex.js",
+        "url": "/demos/drewlex/drewlex.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/drewlex/index.html"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "YWB Comments",
+    "runtime": "JS",
+    "description": "Ввод комментария с изображением и сохранением в localStorage.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/comments",
+      "https://github.com/dvygolov/YWB.Comments.JS",
+      "https://t.me/yellow_web/888"
+    ],
+    "sourceRevision": "87b982a280b2b8c543d7883df785c327e82d7b09",
+    "slug": "comments",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/comments",
+      "https://github.com/dvygolov/YWB.Comments.JS",
+      "https://t.me/yellow_web/888"
+    ],
+    "version": "rev. 87b982a",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте comments.js, CSS и HTML формы.",
+      "Создайте Comment с селекторами формы, имени, текста, файла, аватара и списка. Настройте pushComm под вёрстку своего лендинга, экранируя пользовательский текст."
+    ],
+    "cautions": [
+      "Комментарии хранятся в localStorage этого браузера. Серверной ленты и синхронизации между посетителями нет. В примере добавлено экранирование текста."
+    ],
+    "files": [
+      {
+        "name": "comments.css",
+        "url": "/demos/comments/comments.css"
+      },
+      {
+        "name": "comments.js",
+        "url": "/demos/comments/comments.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/comments/index.html"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "FB Comments",
+    "runtime": "HTML + CSS",
+    "description": "Вёрстка блока комментариев в стиле Facebook.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/fb-comments"
+    ],
+    "sourceRevision": null,
+    "slug": "fb-comments",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/fb-comments"
+    ],
+    "version": "пример ce0fe04",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Перенесите блок комментариев, CSS и изображения из архива. Замените тексты и аватары.",
+      "Для ввода комментария понадобится отдельный обработчик, например YWB Comments."
+    ],
+    "cautions": [
+      "Статический HTML/CSS-шаблон. Отправка комментариев в исходном архиве не реализована."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/fb-comments/index.html"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Purchase Popup / Social Proof",
+    "runtime": "JS",
+    "description": "Последовательные уведомления о покупках.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/purchase-popup",
+      "https://github.com/dvygolov/YWB.PurchasePopup.JS",
+      "https://t.me/yellow_web/1664"
+    ],
+    "sourceRevision": "52ba958c09bd04d8f6935ac285c9331cbac15e5b",
+    "slug": "purchase-popup",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/purchase-popup",
+      "https://github.com/dvygolov/YWB.PurchasePopup.JS",
+      "https://t.me/yellow_web/1664"
+    ],
+    "version": "rev. 52ba958",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [
+      "В исходнике имена, города и покупки заданы списками. Это не поток реальных заказов. Для рабочего сайта используйте подтверждённые данные."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/purchase-popup/index.html"
+      },
+      {
+        "name": "ywbpurchasepopup.css",
+        "url": "/demos/purchase-popup/ywbpurchasepopup.css"
+      },
+      {
+        "name": "ywbpurchasepopup.js",
+        "url": "/demos/purchase-popup/ywbpurchasepopup.js"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Панель посетителей и покупок AD1",
+    "runtime": "JS",
+    "description": "Верхняя панель «посетителей сегодня / сейчас / покупок».",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/visitors"
+    ],
+    "sourceRevision": null,
+    "slug": "visitors",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/visitors"
+    ],
+    "version": "пример 6de16ac",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте CSS и JS этого виджета из папки примера. Общие функции AD1 находятся в func.js.",
+      "Настройте landing_notifiers.params: город, валюту, цену и локаль. Вызов подключения выбранного виджета приведён в index.html."
+    ],
+    "cautions": [
+      "Архивный комплект AD1 с зависимостью от jQuery. Значения в демонстрации заданы вручную."
+    ],
+    "files": [
+      {
+        "name": "AllScripts.html",
+        "url": "/demos/visitors/AllScripts.html"
+      },
+      {
+        "name": "buyers.css",
+        "url": "/demos/visitors/buyers.css"
+      },
+      {
+        "name": "css.css",
+        "url": "/demos/visitors/css.css"
+      },
+      {
+        "name": "delivery.css",
+        "url": "/demos/visitors/delivery.css"
+      },
+      {
+        "name": "freezer.css",
+        "url": "/demos/visitors/freezer.css"
+      },
+      {
+        "name": "func.js",
+        "url": "/demos/visitors/func.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/visitors/index.html"
+      },
+      {
+        "name": "script-ms.js",
+        "url": "/demos/visitors/script-ms.js"
+      },
+      {
+        "name": "script.js",
+        "url": "/demos/visitors/script.js"
+      },
+      {
+        "name": "style-ms.css",
+        "url": "/demos/visitors/style-ms.css"
+      },
+      {
+        "name": "style_002.css",
+        "url": "/demos/visitors/style_002.css"
+      },
+      {
+        "name": "visitors.css",
+        "url": "/demos/visitors/visitors.css"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Плашка доставки AD1",
+    "runtime": "JS",
+    "description": "Уведомление о доставке в указанном городе.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/delivery"
+    ],
+    "sourceRevision": null,
+    "slug": "delivery",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/delivery"
+    ],
+    "version": "пример da8825b",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте CSS и JS этого виджета из папки примера. Общие функции AD1 находятся в func.js.",
+      "Настройте landing_notifiers.params: город, валюту, цену и локаль. Вызов подключения выбранного виджета приведён в index.html."
+    ],
+    "cautions": [
+      "Архивный комплект AD1 с зависимостью от jQuery. Значения в демонстрации заданы вручную."
+    ],
+    "files": [
+      {
+        "name": "AllScripts.html",
+        "url": "/demos/delivery/AllScripts.html"
+      },
+      {
+        "name": "buyers.css",
+        "url": "/demos/delivery/buyers.css"
+      },
+      {
+        "name": "css.css",
+        "url": "/demos/delivery/css.css"
+      },
+      {
+        "name": "delivery.css",
+        "url": "/demos/delivery/delivery.css"
+      },
+      {
+        "name": "freezer.css",
+        "url": "/demos/delivery/freezer.css"
+      },
+      {
+        "name": "func.js",
+        "url": "/demos/delivery/func.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/delivery/index.html"
+      },
+      {
+        "name": "script-ms.js",
+        "url": "/demos/delivery/script-ms.js"
+      },
+      {
+        "name": "script.js",
+        "url": "/demos/delivery/script.js"
+      },
+      {
+        "name": "style-ms.css",
+        "url": "/demos/delivery/style-ms.css"
+      },
+      {
+        "name": "style_002.css",
+        "url": "/demos/delivery/style_002.css"
+      },
+      {
+        "name": "visitors.css",
+        "url": "/demos/delivery/visitors.css"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Заморозка цены AD1",
+    "runtime": "JS",
+    "description": "Виджет сохранения текущей цены.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/price-freezer"
+    ],
+    "sourceRevision": null,
+    "slug": "price-freezer",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/price-freezer"
+    ],
+    "version": "пример b7e2f46",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте CSS и JS этого виджета из папки примера. Общие функции AD1 находятся в func.js.",
+      "Настройте landing_notifiers.params: город, валюту, цену и локаль. Вызов подключения выбранного виджета приведён в index.html."
+    ],
+    "cautions": [
+      "Архивный комплект AD1 с зависимостью от jQuery. Значения в демонстрации заданы вручную."
+    ],
+    "files": [
+      {
+        "name": "AllScripts.html",
+        "url": "/demos/price-freezer/AllScripts.html"
+      },
+      {
+        "name": "buyers.css",
+        "url": "/demos/price-freezer/buyers.css"
+      },
+      {
+        "name": "css.css",
+        "url": "/demos/price-freezer/css.css"
+      },
+      {
+        "name": "delivery.css",
+        "url": "/demos/price-freezer/delivery.css"
+      },
+      {
+        "name": "freezer.css",
+        "url": "/demos/price-freezer/freezer.css"
+      },
+      {
+        "name": "func.js",
+        "url": "/demos/price-freezer/func.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/price-freezer/index.html"
+      },
+      {
+        "name": "script-ms.js",
+        "url": "/demos/price-freezer/script-ms.js"
+      },
+      {
+        "name": "script.js",
+        "url": "/demos/price-freezer/script.js"
+      },
+      {
+        "name": "style-ms.css",
+        "url": "/demos/price-freezer/style-ms.css"
+      },
+      {
+        "name": "style_002.css",
+        "url": "/demos/price-freezer/style_002.css"
+      },
+      {
+        "name": "visitors.css",
+        "url": "/demos/price-freezer/visitors.css"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Месячная распродажа AD1",
+    "runtime": "JS",
+    "description": "Плашка акции с названием текущего месяца и кнопкой заказа.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/month-sale"
+    ],
+    "sourceRevision": null,
+    "slug": "month-sale",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/month-sale"
+    ],
+    "version": "пример 1c1ec2b",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте CSS и JS этого виджета из папки примера. Общие функции AD1 находятся в func.js.",
+      "Настройте landing_notifiers.params: город, валюту, цену и локаль. Вызов подключения выбранного виджета приведён в index.html."
+    ],
+    "cautions": [
+      "Архивный комплект AD1 с зависимостью от jQuery. Значения в демонстрации заданы вручную."
+    ],
+    "files": [
+      {
+        "name": "AllScripts.html",
+        "url": "/demos/month-sale/AllScripts.html"
+      },
+      {
+        "name": "buyers.css",
+        "url": "/demos/month-sale/buyers.css"
+      },
+      {
+        "name": "css.css",
+        "url": "/demos/month-sale/css.css"
+      },
+      {
+        "name": "delivery.css",
+        "url": "/demos/month-sale/delivery.css"
+      },
+      {
+        "name": "freezer.css",
+        "url": "/demos/month-sale/freezer.css"
+      },
+      {
+        "name": "func.js",
+        "url": "/demos/month-sale/func.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/month-sale/index.html"
+      },
+      {
+        "name": "script-ms.js",
+        "url": "/demos/month-sale/script-ms.js"
+      },
+      {
+        "name": "script.js",
+        "url": "/demos/month-sale/script.js"
+      },
+      {
+        "name": "style-ms.css",
+        "url": "/demos/month-sale/style-ms.css"
+      },
+      {
+        "name": "style_002.css",
+        "url": "/demos/month-sale/style_002.css"
+      },
+      {
+        "name": "visitors.css",
+        "url": "/demos/month-sale/visitors.css"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Даты на лендинге",
+    "runtime": "JS",
+    "description": "Текущие и относительные даты, месяц прописью, год, день недели, локализация.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/dates",
+      "https://github.com/dvygolov/YWB.Dates.JS",
+      "https://t.me/yellow_web/757"
+    ],
+    "sourceRevision": "f8f472f82e8d474e67d94e18f41a5c874422dcfb",
+    "slug": "dates",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/dates",
+      "https://github.com/dvygolov/YWB.Dates.JS",
+      "https://t.me/yellow_web/757"
+    ],
+    "version": "rev. f8f472f",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Подключите ywbtime.js и задайте lang_locale, например \"ru\".",
+      "В HTML используйте print_date(-2), print_month(0), print_year(). Числовой параметр задаёт сдвиг. Эти функции рассчитаны на выполнение во время разбора HTML."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "alternative.js",
+        "url": "/demos/dates/alternative.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/dates/index.html"
+      },
+      {
+        "name": "ywbtime.js",
+        "url": "/demos/dates/ywbtime.js"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Динамическая печать текста",
+    "runtime": "JS",
+    "description": "Печать и стирание сменяющихся слов.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/typing",
+      "https://gist.github.com/dvygolov/2d881226f930a08586d878fb185c84b1",
+      "https://t.me/yellow_web/1720"
+    ],
+    "sourceRevision": null,
+    "slug": "typing",
+    "category": "Медиа и эффекты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/typing",
+      "https://gist.github.com/dvygolov/2d881226f930a08586d878fb185c84b1",
+      "https://t.me/yellow_web/1720"
+    ],
+    "version": "пример 3f8cd1a",
+    "demo": true,
+    "demoKind": "Адаптация примера",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/typing/index.html"
+      },
+      {
+        "name": "dynamictype.html · исходник",
+        "url": "/sources/typing/dynamictype.html"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Блюр изображений",
+    "runtime": "JS",
+    "description": "Размытие, подпись поверх картинки, раскрытие по клику.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/blur",
+      "https://gist.github.com/dvygolov/3e70dddaad24afed8b8d37b96b90d185",
+      "https://gist.github.com/dvygolov/e2b47585c0b593225b8d74f372699f06",
+      "https://t.me/yellow_web/1356"
+    ],
+    "sourceRevision": null,
+    "slug": "blur",
+    "category": "Медиа и эффекты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/blur",
+      "https://gist.github.com/dvygolov/3e70dddaad24afed8b8d37b96b90d185",
+      "https://gist.github.com/dvygolov/e2b47585c0b593225b8d74f372699f06",
+      "https://t.me/yellow_web/1356"
+    ],
+    "version": "пример 2188f75",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/blur/index.html"
+      },
+      {
+        "name": "ywbblur.js",
+        "url": "/demos/blur/ywbblur.js"
+      },
+      {
+        "name": "ywbblur.js · исходник",
+        "url": "/sources/blur/ywbblur.js"
+      },
+      {
+        "name": "blurredimage.html · исходник",
+        "url": "/sources/blur/blurredimage.html"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Динамическая замена картинки",
+    "runtime": "JS",
+    "description": "Подмена главного изображения прелендинга.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/image-swap",
+      "https://gist.github.com/dvygolov/7b1d5a85e1ce1bdf9fc95fd631801702"
+    ],
+    "sourceRevision": null,
+    "slug": "image-swap",
+    "category": "Медиа и эффекты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/image-swap",
+      "https://gist.github.com/dvygolov/7b1d5a85e1ce1bdf9fc95fd631801702"
+    ],
+    "version": "пример 50d1562",
+    "demo": true,
+    "demoKind": "Адаптация примера",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/image-swap/index.html"
+      },
+      {
+        "name": "changepic.js · исходник",
+        "url": "/sources/image-swap/changepic.js"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "FaviconFlicker",
+    "runtime": "JS",
+    "description": "Мигающая иконка неактивной вкладки.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/favicon",
+      "https://github.com/dvygolov/YWB.FaviconFlicker.JS"
+    ],
+    "sourceRevision": "e3ae7544f3ccc125aeaefb8d31d24eab2ab60ac1",
+    "slug": "favicon",
+    "category": "Медиа и эффекты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/favicon",
+      "https://github.com/dvygolov/YWB.FaviconFlicker.JS"
+    ],
+    "version": "rev. e3ae754",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Подключите ywbfaviconflicker.js. По событию visibilitychange он начинает менять favicon, а при возвращении останавливается.",
+      "Для проверки откройте пример в отдельной вкладке и переключитесь на другую. Встроенное изображение показывает фактический favicon, созданный скриптом."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/favicon/index.html"
+      },
+      {
+        "name": "ywbfaviconflicker.js",
+        "url": "/demos/favicon/ywbfaviconflicker.js"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Confetti",
+    "runtime": "JS",
+    "description": "Конфетти по загрузке или событию.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/confetti",
+      "https://github.com/dvygolov/YWB.Confetti.JS"
+    ],
+    "sourceRevision": "9c9ffc9f196c5688cd793b5a29de97a27d7ebf55",
+    "slug": "confetti",
+    "category": "Игровые механики",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/confetti",
+      "https://github.com/dvygolov/YWB.Confetti.JS"
+    ],
+    "version": "rev. 9c9ffc9",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/confetti/index.html"
+      },
+      {
+        "name": "ywbconfetti.js",
+        "url": "/demos/confetti/ywbconfetti.js"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Крипто-калькулятор",
+    "runtime": "JS",
+    "description": "Демонстрационный расчёт сумм за день, неделю и месяц.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/crypto-calculator",
+      "https://gist.github.com/dvygolov/c127cb2316f94a6a53eb72b47eacb050"
+    ],
+    "sourceRevision": null,
+    "slug": "crypto-calculator",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/crypto-calculator",
+      "https://gist.github.com/dvygolov/c127cb2316f94a6a53eb72b47eacb050"
+    ],
+    "version": "пример e292a43",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [
+      "Исходная формула: сумма × 1,25, затем × 7 и × 30. Это заданная рекламная арифметика, не прогноз доходности."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/crypto-calculator/index.html"
+      },
+      {
+        "name": "cryptocalc.html · исходник",
+        "url": "/sources/crypto-calculator/cryptocalc.html"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Калькулятор веса",
+    "runtime": "JS + jQuery",
+    "description": "Интерактивный блок для похудательной проклы.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/weight-calculator",
+      "https://gist.github.com/dvygolov/769d0ec88e26e645682491b9b9167fdf",
+      "https://t.me/yellow_web/501"
+    ],
+    "sourceRevision": null,
+    "slug": "weight-calculator",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/weight-calculator",
+      "https://gist.github.com/dvygolov/769d0ec88e26e645682491b9b9167fdf",
+      "https://t.me/yellow_web/501"
+    ],
+    "version": "пример e6305ef",
+    "demo": true,
+    "demoKind": "Адаптация интерфейса",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [
+      "Сохранены пороги исходной формулы «рост минус вес». Медицинские диагнозы и обещания похудения из рекламного шаблона удалены. Расчёт не оценивает здоровье."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/weight-calculator/index.html"
+      },
+      {
+        "name": "weightlosscalculator.html · исходник",
+        "url": "/sources/weight-calculator/weightlosscalculator.html"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "YellowVSL",
+    "runtime": "JS",
+    "description": "YouTube VSL-плеер: autoplay, прогресс, CTA, resume, popup и sticky.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/yellowvsl",
+      "https://github.com/dvygolov/yellow-vsl",
+      "https://yellowvsl.pages.dev/",
+      "https://t.me/yellow_web/3675"
+    ],
+    "sourceRevision": "9fd579d0628573d4da5841ffee94bd5ccca14c73",
+    "version": "1.8.2",
+    "slug": "yellowvsl",
+    "category": "Медиа и эффекты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/yellowvsl",
+      "https://github.com/dvygolov/yellow-vsl",
+      "https://yellowvsl.pages.dev/",
+      "https://t.me/yellow_web/3675"
+    ],
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Подключите сборку YellowVSL из GitHub или npm.",
+      "Создайте контейнер и вызовите YellowVSL.create с video и параметрами playback, ctas, sticky. Полный API и готовые конфигурации находятся на сайте YellowVSL."
+    ],
+    "cautions": [
+      "Для проигрывания необходим доступ к YouTube. В примере внешнее видео загружается через YouTube API."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/yellowvsl/index.html"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "YTDefer",
+    "runtime": "JS",
+    "description": "Ленивая загрузка YouTube по клику на превью.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/youtube-defer",
+      "https://github.com/groupboard/ytdefer",
+      "https://t.me/yellow_web/504"
+    ],
+    "sourceRevision": null,
+    "slug": "youtube-defer",
+    "category": "Медиа и эффекты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/youtube-defer",
+      "https://github.com/groupboard/ytdefer",
+      "https://t.me/yellow_web/504"
+    ],
+    "version": "пример c24c7d7",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Скопируйте файлы примера в папку лендинга, сохранив относительные пути к CSS и изображениям.",
+      "Подключите скрипт и перенесите блок HTML из примера. Названия контейнеров должны совпадать с конфигурацией.",
+      "Подставьте свои тексты и адрес обработчика формы. Демонстрационный перехват отправки из demo-common.js на рабочем лендинге не нужен."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/youtube-defer/index.html"
+      },
+      {
+        "name": "ytdefer.min.js",
+        "url": "/demos/youtube-defer/ytdefer.min.js"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Маска и валидация телефона",
+    "runtime": "JS",
+    "description": "Форматирование номера, код страны, проверка перед отправкой.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/phone-mask",
+      "https://gist.github.com/dvygolov/52e4237a4aeb32c907139332aa76d8fd",
+      "https://github.com/dvygolov/Inputmask"
+    ],
+    "sourceRevision": "d3e84f068137d8adbc37f565032369d8ca88ab86",
+    "slug": "phone-mask",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/phone-mask",
+      "https://gist.github.com/dvygolov/52e4237a4aeb32c907139332aa76d8fd",
+      "https://github.com/dvygolov/Inputmask"
+    ],
+    "version": "rev. d3e84f0",
+    "demo": true,
+    "demoKind": "Inputmask",
+    "instructions": [
+      "Подключите Inputmask один раз. Примените Inputmask({mask: \"+7 (999) 999-99-99\"}).mask к полю телефона.",
+      "Для международных номеров используйте intl-tel-input из исходного примера. Маска проверяет формат, существование номера проверяется отдельно."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/phone-mask/index.html"
+      },
+      {
+        "name": "PhoneNumberValidation.html · исходник",
+        "url": "/sources/phone-mask/PhoneNumberValidation.html"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Плавная прокрутка и починка якорей",
+    "runtime": "JS",
+    "description": "Переход к форме или выбранному блоку без перезагрузки.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/smooth-scroll",
+      "https://gist.github.com/dvygolov/75270c5e57a1b0dc0f6e6402206bb8d7",
+      "https://github.com/dvygolov/YellowTDS/blob/multipleconfigs/code/scripts/fixanchors.js",
+      "https://t.me/yellow_web/297"
+    ],
+    "sourceRevision": null,
+    "slug": "smooth-scroll",
+    "category": "Виджеты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/smooth-scroll",
+      "https://gist.github.com/dvygolov/75270c5e57a1b0dc0f6e6402206bb8d7",
+      "https://github.com/dvygolov/YellowTDS/blob/multipleconfigs/code/scripts/fixanchors.js",
+      "https://t.me/yellow_web/297"
+    ],
+    "version": "пример ce64ac0",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/smooth-scroll/index.html"
+      },
+      {
+        "name": "replaceanchorstosmoothscroll.js · исходник",
+        "url": "/sources/smooth-scroll/replaceanchorstosmoothscroll.js"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Прокидывание URL-меток в ссылки",
+    "runtime": "JS",
+    "description": "Перенос входных параметров в исходящие ссылки.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/url-params",
+      "https://gist.github.com/dvygolov/06defa5b1ffb3387c58ef0a731c511d2"
+    ],
+    "sourceRevision": null,
+    "slug": "url-params",
+    "category": "Метки и аналитика",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/url-params",
+      "https://gist.github.com/dvygolov/06defa5b1ffb3387c58ef0a731c511d2"
+    ],
+    "version": "пример fb829b0",
+    "demo": true,
+    "demoKind": "Исправленная адаптация",
+    "instructions": [
+      "При сборке ссылки используйте URL и URLSearchParams. Перенесите только нужные входные параметры через searchParams.set.",
+      "Не передавайте персональные данные в URL. Определите приоритет одинаковых параметров; в примере входное значение заменяет имеющееся."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/url-params/index.html"
+      },
+      {
+        "name": "addquerystringtolinks.js · исходник",
+        "url": "/sources/url-params/addquerystringtolinks.js"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Meta Pixel по клику / форме",
+    "runtime": "JS",
+    "description": "Отправка события при клике или заполненных name/phone.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/meta-pixel",
+      "https://gist.github.com/dvygolov/238298c6e21d19ae3d56f9a461767205",
+      "https://gist.github.com/dvygolov/5dd705e51994b154e2e124ae94e04a40",
+      "https://t.me/yellow_web/2151",
+      "https://t.me/yellow_web/129"
+    ],
+    "sourceRevision": null,
+    "slug": "meta-pixel",
+    "category": "Метки и аналитика",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/meta-pixel",
+      "https://gist.github.com/dvygolov/238298c6e21d19ae3d56f9a461767205",
+      "https://gist.github.com/dvygolov/5dd705e51994b154e2e124ae94e04a40",
+      "https://t.me/yellow_web/2151",
+      "https://t.me/yellow_web/129"
+    ],
+    "version": "пример b64dd8d",
+    "demo": true,
+    "demoKind": "Локальный журнал событий",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [
+      "В примере fbq заменён локальным журналом. Событие по нажатию не подтверждает, что сервер принял заявку."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/meta-pixel/index.html"
+      },
+      {
+        "name": "firemetapixel.html · исходник",
+        "url": "/sources/meta-pixel/firemetapixel.html"
+      },
+      {
+        "name": "addbuttonpixel.js · исходник",
+        "url": "/sources/meta-pixel/addbuttonpixel.js"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "title": "ActivityTracker",
+    "runtime": "JS",
+    "description": "Учёт активности пользователя по интервалам и цель в Метрике.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/activity-tracker",
+      "https://gist.github.com/dvygolov/54dc60299ae0ca7188a8dc8ffd0db063",
+      "https://t.me/yellow_web/1972"
+    ],
+    "sourceRevision": null,
+    "slug": "activity-tracker",
+    "category": "Метки и аналитика",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/activity-tracker",
+      "https://gist.github.com/dvygolov/54dc60299ae0ca7188a8dc8ffd0db063",
+      "https://t.me/yellow_web/1972"
+    ],
+    "version": "пример 6b033b9",
+    "demo": true,
+    "demoKind": "Пример с исходным скриптом",
+    "instructions": [
+      "Подключите класс ActivityTracker и создайте экземпляр с общей длительностью, интервалом проверки и ID Метрики. Вызовите init().",
+      "В примере интервал сокращён до 6 секунд, ym заменён журналом. Для рабочей страницы настройте время, ID счётчика и название цели."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "activity.js",
+        "url": "/demos/activity-tracker/activity.js"
+      },
+      {
+        "name": "index.html",
+        "url": "/demos/activity-tracker/index.html"
+      },
+      {
+        "name": "ywactivitytracker.js · исходник",
+        "url": "/sources/activity-tracker/ywactivitytracker.js"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Отправка лидов на почту",
+    "runtime": "PHP",
+    "description": "Имя и телефон из формы отправляются письмом.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/sources/leads-email",
+      "https://t.me/yellow_web/36"
+    ],
+    "sourceRevision": null,
+    "slug": "leads-email",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/sources/leads-email",
+      "https://t.me/yellow_web/36"
+    ],
+    "version": "rev. архив",
+    "demo": false,
+    "demoKind": "PHP · серверный скрипт",
+    "instructions": [
+      "Откройте исходник и настройте получателя, путь хранения или проверку повторов.",
+      "Установите обработчик на сервере с PHP. Укажите его URL в action формы и проверьте ответ на тестовой заявке."
+    ],
+    "cautions": [
+      "Cloudflare Pages не исполняет этот PHP-код. Секреты и файлы заявок нельзя размещать в публичной папке.",
+      "Архивный исходник использует короткий тег <? и требует экранирования полей; адрес получателя в копии заменён на example.com."
+    ],
+    "files": [
+      {
+        "name": "mail.php · исходник",
+        "url": "/sources/leads-email/mail.php.txt"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Сохранение лидов в файл",
+    "runtime": "PHP",
+    "description": "Запись заявки на сервере в локальный файл.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/sources/leads-file"
+    ],
+    "sourceRevision": null,
+    "slug": "leads-file",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/sources/leads-file"
+    ],
+    "version": "rev. архив",
+    "demo": false,
+    "demoKind": "PHP · серверный скрипт",
+    "instructions": [
+      "Откройте исходник и настройте получателя, путь хранения или проверку повторов.",
+      "Установите обработчик на сервере с PHP. Укажите его URL в action формы и проверьте ответ на тестовой заявке."
+    ],
+    "cautions": [
+      "Cloudflare Pages не исполняет этот PHP-код. Секреты и файлы заявок нельзя размещать в публичной папке.",
+      "В архивном send.php есть ошибки: $POST вместо $_POST, переменная $time не определена. Это исходник для доработки, не готовый обработчик."
+    ],
+    "files": [
+      {
+        "name": "Исходный PHP",
+        "url": "/sources/leads-file/original.php.txt"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Сбор незавершённых лидов",
+    "runtime": "JS + приёмник",
+    "description": "Отправка текущих полей без submit после паузы ввода или ухода фокуса.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/incomplete-leads"
+    ],
+    "sourceRevision": null,
+    "slug": "incomplete-leads",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/incomplete-leads"
+    ],
+    "version": "пример 579034d",
+    "demo": true,
+    "demoKind": "Изолированная адаптация",
+    "instructions": [
+      "Подключите отслеживание полей формы. В исходном варианте пауза после keyup составляет 3500 мс, после blur 3000 мс. В адаптации используется input, чтобы учитывать вставку и мобильный ввод.",
+      "Серверный приёмник настраивается отдельно: старый cabinet-поддомен не подходит для нового лендинга. Отменяйте отложенную отправку после успешного submit."
+    ],
+    "cautions": [
+      "Данные могут собираться до отправки формы. Применяйте только с надлежащим уведомлением и основанием для обработки. Демо показывает поля локально."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/incomplete-leads/index.html"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Дедупликация лидов через cookies",
+    "runtime": "PHP",
+    "description": "Сравнение имени, телефона и времени последней конверсии.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/sources/deduplication",
+      "https://gist.github.com/dvygolov/31a5f44470eff9b7c86edd5484fcdfe9",
+      "https://t.me/yellow_web/31"
+    ],
+    "sourceRevision": null,
+    "slug": "deduplication",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/sources/deduplication",
+      "https://gist.github.com/dvygolov/31a5f44470eff9b7c86edd5484fcdfe9",
+      "https://t.me/yellow_web/31"
+    ],
+    "version": "rev. архив",
+    "demo": false,
+    "demoKind": "PHP · серверный скрипт",
+    "instructions": [
+      "Откройте исходник и настройте получателя, путь хранения или проверку повторов.",
+      "Установите обработчик на сервере с PHP. Укажите его URL в action формы и проверьте ответ на тестовой заявке."
+    ],
+    "cautions": [
+      "Cloudflare Pages не исполняет этот PHP-код. Секреты и файлы заявок нельзя размещать в публичной папке."
+    ],
+    "files": [
+      {
+        "name": "cookies.php · исходник",
+        "url": "/sources/deduplication/cookies.php"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Универсальная страница Спасибо",
+    "runtime": "PHP + шаблоны",
+    "description": "Переводы, шаблоны страницы подтверждения, событие пикселя.",
+    "sources": [
+      "https://github.com/dvygolov/YWB.UniThankYou",
+      "https://t.me/yellow_web/2235",
+      "https://t.me/yellow_web/865"
+    ],
+    "sourceRevision": "208312c43166eb34a89adc080e711f3e8c1af2da",
+    "slug": "thank-you",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/YWB.UniThankYou",
+      "https://t.me/yellow_web/2235",
+      "https://t.me/yellow_web/865"
+    ],
+    "version": "rev. 208312c",
+    "demo": false,
+    "demoKind": "GitHub",
+    "instructions": [],
+    "cautions": []
+  },
+  {
+    "id": 41,
+    "title": "Витрина Carousel",
+    "runtime": "HTML + JS",
+    "description": "Встраиваемая витрина для домонетизации.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/carousel",
+      "https://github.com/dvygolov/carousel"
+    ],
+    "sourceRevision": "ff76e57a0f4bcaa9a3f92703db136b2fa6c7990d",
+    "slug": "carousel",
+    "category": "Медиа и эффекты",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/carousel",
+      "https://github.com/dvygolov/carousel"
+    ],
+    "version": "rev. ff76e57",
+    "demo": true,
+    "demoKind": "Slick · обновлённый пример",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/carousel/index.html"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Новостная витрина",
+    "runtime": "PHP + JS",
+    "description": "Новостная страница с тизерами и подгрузкой дополнительных блоков.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/news-showcase"
+    ],
+    "sourceRevision": null,
+    "slug": "news-showcase",
+    "category": "Домонетизация",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/news-showcase"
+    ],
+    "version": "пример bc2d538",
+    "demo": true,
+    "demoKind": "Исходный JS · локальные данные",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [
+      "Исходная витрина запрашивает /news/getteaser. В примере $.getJSON подменён локальным набором материалов. Для рабочего сайта нужен настоящий источник данных."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/news-showcase/index.html"
+      },
+      {
+        "name": "load_full.js",
+        "url": "/demos/news-showcase/load_full.js"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Сбор email на странице Спасибо",
+    "runtime": "HTML + PHP/трекер",
+    "description": "Форма сохраняет email в параметр трекера через postback.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/thank-you-email",
+      "https://t.me/yellow_web/369"
+    ],
+    "sourceRevision": null,
+    "slug": "thank-you-email",
+    "category": "Формы и заявки",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/thank-you-email",
+      "https://t.me/yellow_web/369"
+    ],
+    "version": "пример d8b4400",
+    "demo": true,
+    "demoKind": "Пример интерфейса",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [
+      "Отправка письма требует PHP или другого серверного обработчика. В примере письма не отправляются."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/thank-you-email/index.html"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "title": "BackFix / BackDetect",
+    "runtime": "JS",
+    "description": "Обработка возврата назад: редирект или показ другой страницы.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/backfix",
+      "https://gist.github.com/dvygolov/4de58f99a432b73a574d252e29757891",
+      "https://gist.github.com/dvygolov/e7c0f33fc680bf47a1717c2ab0c83895",
+      "https://github.com/dvygolov/YellowTDS/blob/multipleconfigs/code/scripts/backfix.js",
+      "https://t.me/yellow_web/2489"
+    ],
+    "sourceRevision": null,
+    "slug": "backfix",
+    "category": "Домонетизация",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/backfix",
+      "https://gist.github.com/dvygolov/4de58f99a432b73a574d252e29757891",
+      "https://gist.github.com/dvygolov/e7c0f33fc680bf47a1717c2ab0c83895",
+      "https://github.com/dvygolov/YellowTDS/blob/multipleconfigs/code/scripts/backfix.js",
+      "https://t.me/yellow_web/2489"
+    ],
+    "version": "пример 9f53a36",
+    "demo": true,
+    "demoKind": "Изолированная модель history",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [
+      "Встроенный пример не перенаправляет верхнюю страницу. Оригинальный Backfix и BackDetect зависят от истории и ограничений браузера; проверяйте на целевых устройствах."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/backfix/index.html"
+      },
+      {
+        "name": "ywbackfix.js · исходник",
+        "url": "/sources/backfix/ywbackfix.js"
+      },
+      {
+        "name": "backfixredirect.js · исходник",
+        "url": "/sources/backfix/backfixredirect.js"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Popunder / Clickunder",
+    "runtime": "JS",
+    "description": "Открытие дополнительной страницы по действию пользователя.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/popunder",
+      "https://gist.github.com/dvygolov/ec23e81ad13ada2f41f2402c984527ca",
+      "https://gist.github.com/dvygolov/3cb59e22c720081fef55cab31dc8cb1e",
+      "https://gist.github.com/dvygolov/e22f81a5f316f86c6973cca900e75d57",
+      "https://github.com/dvygolov/js-popunder"
+    ],
+    "sourceRevision": "851faf541bd4bd5c11e3053f0844c7ceb19eac4a",
+    "slug": "popunder",
+    "category": "Домонетизация",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/popunder",
+      "https://gist.github.com/dvygolov/ec23e81ad13ada2f41f2402c984527ca",
+      "https://gist.github.com/dvygolov/3cb59e22c720081fef55cab31dc8cb1e",
+      "https://gist.github.com/dvygolov/e22f81a5f316f86c6973cca900e75d57",
+      "https://github.com/dvygolov/js-popunder"
+    ],
+    "version": "rev. 851faf5",
+    "demo": true,
+    "demoKind": "Контролируемый пример открытия окна",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [
+      "Popunder под активным окном нельзя гарантировать: браузеры ограничивают управление фокусом. Пример открывается только по явному клику."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/popunder/index.html"
+      },
+      {
+        "name": "target.html",
+        "url": "/demos/popunder/target.html"
+      },
+      {
+        "name": "clickunder.js · исходник",
+        "url": "/sources/popunder/clickunder.js"
+      },
+      {
+        "name": "popunder.js · исходник",
+        "url": "/sources/popunder/popunder.js"
+      },
+      {
+        "name": "popunder.js · исходник",
+        "url": "/sources/popunder/popunder.js"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Подмена трафика и лидов в копиях лендинга",
+    "runtime": "JS, разбор исходников",
+    "description": "Набор подмен ссылок, доли трафика и обработчиков форм.",
+    "sources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/copied-landing-traffic",
+      "https://gist.github.com/dvygolov/0b1b8a889da2af6b2ce313aba437f6b0",
+      "https://gist.github.com/dvygolov/2f9266bca8af83bc5ae9668a41c6d28c",
+      "https://gist.github.com/dvygolov/4ebb6ee259afaa94aaeb58e28f504bc6",
+      "https://t.me/yellow_web/809"
+    ],
+    "sourceRevision": null,
+    "slug": "copied-landing-traffic",
+    "category": "Домонетизация",
+    "publicSources": [
+      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/copied-landing-traffic",
+      "https://gist.github.com/dvygolov/0b1b8a889da2af6b2ce313aba437f6b0",
+      "https://gist.github.com/dvygolov/2f9266bca8af83bc5ae9668a41c6d28c",
+      "https://gist.github.com/dvygolov/4ebb6ee259afaa94aaeb58e28f504bc6",
+      "https://t.me/yellow_web/809"
+    ],
+    "version": "пример 2348070",
+    "demo": true,
+    "demoKind": "Локальная модель поведения",
+    "instructions": [
+      "Откройте исходник или рабочий HTML примера по ссылке ниже.",
+      "Перенесите HTML, подключение CSS и JS в лендинг. Сохраните пути к ассетам, настройте тексты и параметры под свою страницу.",
+      "Проверьте выбранный сценарий на мобильном и компьютере до установки на рабочий трафик."
+    ],
+    "cautions": [
+      "Пример показывает проверку домена без перенаправления посетителей и перехвата заявок. Исходники вариантов доступны по ссылкам."
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "url": "/demos/copied-landing-traffic/index.html"
+      },
+      {
+        "name": "leadsstealer.js · исходник",
+        "url": "/sources/copied-landing-traffic/leadsstealer.js"
+      },
+      {
+        "name": "stealtrafficpercent.js · исходник",
+        "url": "/sources/copied-landing-traffic/stealtrafficpercent.js"
+      },
+      {
+        "name": "stealtraffic.js · исходник",
+        "url": "/sources/copied-landing-traffic/stealtraffic.js"
+      }
+    ]
+  }
+]

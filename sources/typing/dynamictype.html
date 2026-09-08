@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Typing Header Example</title>
+    <style>
+      #dynamic-header {
+        display: inline;
+      }
+      .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 1em; /* Match the line height */
+        background-color: black;
+        margin-left: 2px;
+        vertical-align: bottom; /* Align with the text */
+        animation: blink 1s step-start infinite;
+      }
+      @keyframes blink {
+        50% {
+          background-color: transparent;
+        }
+      }
+    </style>
+    <script>
+      const words = [
+        "Innovative",
+        "Creative",
+        "Dynamic",
+        "Efficient",
+        "Reliable",
+      ];
+      let currentIndex = 0;
+      let currentCharIndex = words[currentIndex].length; // Start at the end of the first word
+      let isDeleting = false;
+      let isPaused = true; // Start with a pause
+      let pauseCounter = 0;
+
+      function updateHeaderText() {
+        const headerElement = document.getElementById("dynamic-header");
+        const word = words[currentIndex];
+
+        if (isPaused) {
+          if (pauseCounter < 2) {
+            // Pause for 2 cursor blinks
+            pauseCounter++;
+            setTimeout(updateHeaderText, 1000); // Cursor blinks every second
+            return;
+          } else {
+            isDeleting = true;
+            isPaused = false;
+            pauseCounter = 0;
+          }
+        }
+
+        if (isDeleting) {
+          currentCharIndex--;
+          headerElement.textContent = word.substring(0, currentCharIndex);
+          if (currentCharIndex === 0) {
+            isDeleting = false;
+            currentIndex = (currentIndex + 1) % words.length;
+          }
+        } else {
+          currentCharIndex++;
+          headerElement.textContent = word.substring(0, currentCharIndex);
+          if (currentCharIndex === word.length) {
+            isPaused = true; // Start pausing
+          }
+        }
+
+        let timeout = isDeleting ? 50 : 150; // Speed up the erasing effect
+        setTimeout(updateHeaderText, timeout);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Initialize with the first word and start with a pause
+        const headerElement = document.getElementById("dynamic-header");
+        headerElement.textContent = words[0];
+        updateHeaderText();
+      });
+    </script>
+  </head>
+  <body>
+    <h1><span id="dynamic-header"></span><span class="cursor"></span></h1>
+  </body>
+</html>

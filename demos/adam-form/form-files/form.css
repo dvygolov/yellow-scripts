@@ -1,0 +1,16 @@
+.form_wrapper { width: 90%; text-align: center; border-style: outset; border-width: medium; border-color: rgb(255, 98, 121); padding: 10px; font-style: normal; border-radius: 5px; }
+.order-form select, .order-form input { margin-bottom: 15px; box-sizing: border-box; }
+input, select { height: 37px; width: 100%; padding: 0px 14px; }
+input, textarea { outline: medium none; }
+.botBut { color: rgb(255, 255, 255); font-weight: bold; text-transform: uppercase; background: rgb(192, 31, 55) none repeat scroll 0% 0%; border: medium none; border-radius: 8px; max-width: 350px; width: 80%; font-size: 18px; text-align: center; padding: 20px; display: block; text-decoration: none; opacity: 1; margin: 10px auto; }
+.text_form { font-size: 16px; }
+.small_text { font-size: 15px; }
+.price { display: block; margin: 30px auto; text-align: center; }
+.old_price { font-size: 30px; margin: 25px auto; }
+.new_price { font-size: 35px; color: rgb(255, 0, 0); line-height: 1; margin: 25px auto; }
+.timer { display: block; margin-top: -13px; padding-bottom: 20px; }
+.timer-hrs, .timer-min, .timer-sec { font-size: 6rem; position: relative; padding: 0px 16px; display: inline-block; }
+.timer-hrs::before, .timer-min::before, .timer-sec::before { content: ""; font-family: "Open Sans",sans-serif; font-size: 1.3rem; color: rgb(0, 0, 0); position: absolute; width: 100%; text-align: center; left: 0px; bottom: -16px; }
+.timer-hrs::before { content: "Hours"; }
+.timer-min::before { content: "Minutes"; }
+.timer-sec::before { content: "Seconds"; }

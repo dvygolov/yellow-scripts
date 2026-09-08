@@ -1,0 +1,13 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Callbacker</title><link rel="stylesheet" href="/demo.css"><script src="/demo-common.js"></script></head><body><main><h2>Обратный звонок</h2><button id="open-callback" type="button">Заказать звонок</button></main><script src="ywbcallbacker.js"></script><script>
+    document.addEventListener("DOMContentLoaded", () => new Callbacker({
+      texts: {
+        title: "Перезвонить вам?",
+        mainText: "Оставьте номер, оператор уточнит детали заказа.",
+        inputName: "Ваше имя",
+        inputPhone: "Телефон",
+        button: "Жду звонка"
+      },
+      timeout: 500
+    }));
+    
+  </script><script>document.querySelector('#open-callback').onclick=()=>document.querySelector('#callbacker-design a')?.click();</script></body></html>

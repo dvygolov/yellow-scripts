@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Page</title>
+    <script>
+      function fireMetaPixel(id, event) {
+        // Создание тега <img> с заданными параметрами
+        var img = document.createElement("img");
+        img.height = 1;
+        img.width = 1;
+        img.src = `https://www.facebook.com/tr?id=${id}&ev=${event}&noscript=1`;
+
+        // Вставка тега <img> сразу после <body>
+        document.body.insertBefore(img, document.body.firstChild);
+      }
+    </script>
+  </head>
+  <body>
+    <a
+      href="https://www.example.com"
+      target="_blank"
+      onclick="fireMetaPixel('123456', 'Lead')"
+    >
+      <button>Click me</button>
+    </a>
+  </body>
+</html>

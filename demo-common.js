@@ -1,0 +1,2 @@
+window.demoLog=function(value){let log=document.querySelector('#event-log');if(!log){log=document.createElement('output');log.id='event-log';log.setAttribute('aria-live','polite');(document.querySelector('main')||document.body).append(log);}log.textContent=typeof value==='string'?value:JSON.stringify(value,null,2);};
+document.addEventListener('submit',event=>{event.preventDefault();if(event.target.id==='commentForm')return;if(!event.target.reportValidity())return;window.demoLog('Форма заполнена. Отправка отключена в примере.');});

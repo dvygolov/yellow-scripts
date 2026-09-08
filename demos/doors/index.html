@@ -1,0 +1,13 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Двери</title><link rel="stylesheet" href="/demo.css"><script src="/demo-common.js"></script></head><body><main><div id="doors_block"></div><form id="order_block" class="order-form" action="/api.php" method="post">
+    <label>Имя</label>
+    <input name="name" placeholder="Иван">
+    <label>Телефон</label>
+    <input name="phone" placeholder="+7 999 123-45-67">
+    <input type="hidden" name="sub1" value="demo">
+    <button type="submit">Заказать</button>
+  </form></main><script src="ywbdoors.js"></script><script>
+    initDoors({
+      selectors:{ doors:"#doors_block", form:"#order_block" },
+      texts:{ title:"Выберите дверь и попробуйте найти скидку 50%", popup:"Повезло! Скидка ваша." }
+    });
+  </script></body></html>

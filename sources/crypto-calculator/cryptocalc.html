@@ -1,0 +1,244 @@
+<!--Calculator start-->
+<div class="container-calc">
+	<h2 style="text-align: center; font-weight: bold; color: #e8e8e8; margin-bottom: 20px; margin-top: 0;">Here you can calculate your net income</h2>
+	<div class="calc-body">
+		<div class="logo-block"> <span>ExtraCalc v3.5</span>
+		</div>
+		<div class="calc-screen">
+			<div class="calc-operation"> <span class="no-title">The minimum deposit amount is $250</span>
+			</div>
+			<div class="calc-typed">
+				<input class="input" min="250" id="screenInput" name="number1" type="text" size="10" maxlength="4" placeholder="0$" value="">
+			</div>
+		</div>
+		<div class="calc-buuton">
+			<button class="button" onclick="showresult('1')">Calculate</button>
+		</div>
+		<div class="сalc-main">
+			<div class="calc-operation"> <span class="title">Your earnings will be like that:</span>
+			</div>
+			<div class="calc-result-block">
+				<div class="result-block">
+					<div class="text-b">In one day</div>
+					<div class="count-b" id="j-res">
+						<div id="j-res1">0</div>
+						<div class="doll">$</div>
+					</div>
+				</div>
+				<div class="result-block">
+					<div class="text-b">In one week</div>
+					<div class="count-b" id="j-res">
+						<div id="j-res2">0</div>
+						<div class="doll">$</div>
+					</div>
+				</div>
+				<div class="result-block">
+					<div class="text-b">In one month</div>
+					<div class="count-b j-res" id="j-res">
+						<div id="j-res3">0</div>
+						<div class="doll">$</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+ <script type="text/javascript">
+function showresult() {
+    let numScreen = parseFloat(document.getElementById("screenInput").value);
+    let listRes = document.querySelectorAll("#j-res");
+    let n2 = parseFloat("1.25");
+    let r1;
+    let r2;
+    let r3;
+    if (!Number.isInteger(numScreen)) {
+        alert("The minimum deposit amount is $250");
+        document.getElementById("j-res1").innerText = "0";
+        document.getElementById("j-res2").innerText = "0";
+        document.getElementById("j-res3").innerText = "0";
+        for (let i = 0; i < listRes.length; i++) {
+            let item = listRes[i];
+            item.classList.remove("active");
+        }
+    } else if (Number.isInteger(numScreen) & (numScreen < 250)) {
+        alert("The minimum deposit amount is $250");
+        document.getElementById("screenInput").value = "250";
+        outRes(250);
+    } else {
+        outRes();
+    }
+
+    function outRes(count1 = numScreen) {
+        r1 = count1 * n2;
+        r2 = count1 * n2 * 7;
+        r3 = count1 * n2 * 30;
+        document.getElementById("j-res1").innerText = Math.round(r1);
+        document.getElementById("j-res2").innerText = Math.round(r2);
+        document.getElementById("j-res3").innerText = Math.round(r3);
+        for (let i = 0; i < listRes.length; i++) {
+            let item = listRes[i];
+            item.classList.add("active");
+        }
+    }
+}
+</script>       
+<style type="text/css">
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container-calc {
+    margin-bottom: 30px;
+    background-color: #0ea572;
+    border-radius: 5px;
+    padding: 25px 5px;
+}
+
+.calc-body {
+    margin: auto;
+    border: solid 1px #3a4655;
+    box-shadow: 0 0px 25px 0 #313131;
+    background: #3a4655;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 520px;
+    width: 100%;
+}
+.container-calc .calc-screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-calc .calc-operation .title {
+    color: #ffffff;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 5px;
+    display: block;
+    margin: 15px 0;
+}
+.container-calc .calc-operation .no-title {
+    color: #eeeeeecf;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+.container-calc .calc-typed {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
+    position: relative;
+}
+.container-calc .calc-result-block {
+    width: 100%;
+    background: #3c4857;
+}
+.container-calc .calc-result-block {
+    width: 100%;
+    background: #3c4857;
+    display: flex;
+    justify-content: space-between;
+}
+.container-calc .calc-buuton .button {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px auto;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.31);
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.container-calc .button:hover {
+    background-color: #f0ad4e;
+    transition: all 0.3s ease-out;
+}
+.container-calc .calc-result-block .count-b.active {
+    background: #3acc4061;
+    color: #fff;
+}
+.container-calc .calc-result-block .count-b {
+    background: #425062;
+    color: #858585;
+    padding: 10px 10px;
+    display: flex;
+    font-size: 21px;
+    min-width: 100px;
+    text-align: center;
+    text-align: center;
+    vertical-align: middle;
+    border-right: solid 2px #3c4857;
+    border-bottom: solid 2px #3c4857;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    font-size: 24px;
+}
+@media all and (max-width: 500px) {
+    .calc-result-block .count-b{
+        min-width: auto;
+    }
+    
+}.container-calc .result-block .text-b {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+.container-calc .input {
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+    padding: 2px 0;
+    position: relative;
+    width: 120px;
+    transition: all 0.2s ease-in-out;
+    border: 1px dotted #727b86;
+}
+.container-calc .input:focus {
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border: 1px dotted #eee;
+}
+
+.container-calc input::-webkit-input-placeholder {
+    color: #858585;
+    font-family: sans-serif;
+}
+
+.container-calc input:focus::-webkit-input-placeholder {}
+.container-calc .Ñ^Aalc-main {
+    margin-top: 30px;
+    border-top: #727b86 dotted 1px;
+    padding: 10px;
+}
+.container-calc .count-b .doll {
+    margin-left: 3px;
+}
+.container-calc .logo-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container-calc .logo-block img {
+    padding: 0;
+    max-width: 30px;
+    margin-right: 5px;
+}
+.container-calc .logo-block span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+</style>
+<!--Calculator finish-->

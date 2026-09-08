@@ -1,0 +1,248 @@
+.cpa_wr {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif, Arial, Helvetica;
+}
+.cpa_form-wr {
+  box-sizing: border-box;
+  max-width: 660px;
+  min-width: 320px;
+  width: 100%;
+}
+.cpa_img-block {
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+.cpa_prod-img {
+  min-width: 300px;
+  max-width: 660px;
+  max-height: 320px;
+  object-fit: contain;
+}
+.cpa_bages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px;
+}
+.cpa_bage-item-wr {
+  flex-basis: 70px;
+  aspect-ratio: 1 / 1;
+}
+.cpa_bage-item {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cpa_price-block {
+  display: flex;
+  background-color: #383738;
+}
+.cpa_old-price,
+.cpa_price-discount,
+.cpa_new-price {
+  flex: 1;
+}
+.cpa_price-discount-img {
+  width: 100%;
+}
+.cpa_price-discount {
+  background-image: url(/imgs/red-arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  text-align: center;
+  padding-top: 5%;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+}
+.cpa_new-price-cost {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 20px;
+  color: gold;
+}
+.cpa_new-price-cost::after {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  content: 'NEU!';
+  color: #fff;
+  background-color: red;
+  border-radius: 10px 5px 10px 0;
+  font-size: 12px;
+  padding: 5px;
+}
+.cpa_old-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  color: #ccc;
+}
+.cpa_old-price-cost {
+  position: relative;
+  text-align: center;
+  width: 30%;
+}
+.cpa_old-price-cost::before {
+  content: '';
+  position: absolute;
+  display: block;
+  transform: rotate(45deg);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  bottom: 50%;
+}
+.cpa_new-price {
+  text-align: center;
+}
+.cpa_new-price-title {
+  color: #fff;
+  font-size: 16px;
+}
+.cpa_new-price-title span:nth-child(1) {
+  color: rgb(245, 107, 233);
+  font-style: italic;
+}
+.cpa_new-price-title span:nth-child(2) {
+  font-style: italic;
+}
+.cpa_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
+  background-color: #c0edd6;
+}
+.cpa_timer {
+  padding: 20px 5px;
+  text-align: center;
+  background-color: #c0edd6;
+}
+.cpa_timer-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+.cpa_timer-clock {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 25px;
+  font-size: 56px;
+  color: #000;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.cpa_timer-item {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+.cpa_hours,
+.cpa_minutes,
+.cpa_seconds {
+  box-sizing: content-box;
+  line-height: 1.1;
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  position: relative;
+}
+.cpa_hours::before,
+.cpa_minutes::before,
+.cpa_seconds::before {
+  font-size: 14px;
+}
+.cpa_hours::before {
+  content: 'Studen';
+  position: absolute;
+  bottom: -15px;
+  left: 15px;
+  color: black;
+}
+.cpa_minutes::before {
+  content: 'Minuten';
+  position: absolute;
+  bottom: -15px;
+  left: 14px;
+  color: black;
+}
+.cpa_seconds::before {
+  content: 'Secunden';
+  position: absolute;
+  bottom: -15px;
+  left: 7px;
+  color: black;
+}
+.cpa_timer-subscribtion {
+  font-size: 10px;
+  font-weight: 600;
+  color: black;
+}
+.cpa_input-label {
+  display: block;
+  font-size: 12px;
+  width: 100%;
+  max-width: 300px;
+}
+.cpa_name,
+.cpa_phone {
+  position: relative;
+}
+.cpa_name::before,
+.cpa_phone::before {
+  position: absolute;
+  content: '';
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.cpa_name::before {
+  top: 2px;
+  background-image: url(imgs/avatar.png);
+}
+.cpa_phone::before {
+  top: 17px;
+  background-image: url(imgs/telephone.png);
+}
+.cpa_input-label-txt {
+  display: block;
+  padding-bottom: 3px;
+}
+.cpa_input-label:nth-of-type(2) {
+  padding-top: 15px;
+}
+.cpa_input {
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  height: 2rem;
+  border-radius: 5px;
+  border-width: 0.5px;
+  border-color: #fef4e6;
+  outline: 0;
+  padding-left: 40px !important;
+}
+.cpa_submit-btn {
+  margin: 15px 0;
+  padding: 10px;
+  color: #fff;
+  background-color: rgb(129, 13, 13);
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 24px;
+  font-weight: 600;
+  word-wrap: break-word;
+}

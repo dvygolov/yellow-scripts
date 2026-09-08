@@ -1,0 +1,4 @@
+.buyers-notify{position:fixed;right:15px;top:60px;padding:10px;box-sizing:border-box;background:rgba(0,0,0,0.7);font-size:14px;font-family:Arial,Helvetica,sans-serif;line-height:18px;box-shadow: 0 0 10px rgba(175, 175, 175, 0.25);-webkit-font-smoothing:antialiased;border-radius:4px;z-index:999;color:#fff}
+.buyers-notify .buyers-icon{width:48px;height:48px;margin-top:20px;float:left;background:url(/files/_blocks/notificators/img/basket.png) center no-repeat}
+.buyers-notify .notify-text{float:left;width:230px;padding:20px 0 20px 10px; color: #fff !important;}
+.freezer .buyers-notify{top:270px!important}

@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="cpaform.css" rel="stylesheet">
+  <title>CPA form</title>
+<script src="/demo-common.js"></script><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+
+<body style="margin: 0; padding: 0">
+  <div class="cpa_wr">
+    <div class="cpa_form-wr">
+      <div class="cpa_img-block">
+        <img class="cpa_prod-img" src="imgs/dietica.png">
+      </div>
+      <div class="cpa_bages">
+        <div class="cpa_bage-item-wr">
+          <img class="cpa_bage-item" src="imgs/stamp_1.png">
+        </div>
+        <div class="cpa_bage-item-wr">
+          <img class="cpa_bage-item" src="imgs/stamp_2.png">
+        </div>
+        <div class="cpa_bage-item-wr">
+          <img class="cpa_bage-item" src="imgs/stamp_3.png">
+        </div>
+        <div class="cpa_bage-item-wr">
+          <img class="cpa_bage-item" src="imgs/stamp_4.png">
+        </div>
+      </div>
+      <span class="cpa_form-title">SONDERANGEBOT!</span>
+      <div class="cpa_price">
+        <span class="cpa_new-price">132.000 EUR</span>
+        <span class="cpa_old-price">100.000 EUR</span>
+      </div>
+      <form class="cpa_form" method="post" action="#">
+        <div class="cpa_timer">
+          <span class="cpa_timer-title">Bis Aktionsende sind noch:</span>
+          <div class="cpa_timer-clock">
+            <span class="cpa_timer-item cpa_hours" id="hr"></span>:
+            <span class="cpa_timer-item cpa_minutes" id="min"></span>:
+            <span class="cpa_timer-item cpa_seconds" id="sec"></span>
+          </div>
+        </div>
+        <input type="hidden" name="sub1" value="{subid}">
+        <input type="hidden" name="sub2" value="{landing_id}">
+        <input type="hidden" name="sub3" value="{sub_id_3}">
+        <input type="hidden" name="country" value="{country_code}">
+        <input type="hidden" name="px" value="{px}">
+
+        <label class="cpa_input-label">
+          <span class="cpa_input-label-txt"><i>Nomen eigeben:</i></span>
+          <input class="cpa_input" type="text" name="name" required="">
+        </label>
+
+        <label class="cpa_input-label">
+          <span class="cpa_input-label-txt"><i>Telefonnummer eigeben:</i></span>
+          <input class="cpa_input" type="text" minlength="5" required="" name="phone">
+        </label>
+
+        <button id="orderSubmit" class="cpa_submit-btn" type="submit">
+          BESTELLEN
+        </button>
+      </form>
+    </div>
+  </div>
+  <script>
+    let time = 3620;
+    let intr;
+
+    function start_timer() {
+      intr = setInterval(tick, 1000);
+    }
+
+    function tick() {
+      time = time - 1;
+      let hours = Math.floor(time / (60 * 60));
+      let mins = Math.floor(time / 60 - hours * 60);
+      let secs = time - hours * 60 * 60 - mins * 60;
+      if (hours == 0 && mins == 0 && secs == 0) {
+        clearInterval(intr);
+      }
+      hours = hours >= 10 ? hours : "0" + hours;
+      mins = mins >= 10 ? mins : "0" + mins;
+      secs = secs >= 10 ? secs : "0" + secs;
+      document.getElementById("hr").innerHTML = hours;
+      document.getElementById("min").innerHTML = mins;
+      document.getElementById("sec").innerHTML = secs;
+    }
+
+    start_timer();
+  </script>
+
+
+
+</body></html>

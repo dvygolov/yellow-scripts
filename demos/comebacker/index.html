@@ -1,0 +1,29 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Comebacker</title><link rel="stylesheet" href="comebacker/css.css"><link rel="stylesheet" href="/demo.css"><script src="/demo-common.js"></script></head><body><main><button type="button" onclick="document.querySelector('#comebacker').style.display='block'">Получить предложение</button>
+    
+    <form id="orderBlock" class="order-form" action="/api.php" method="post">
+    <label>Имя</label>
+    <input name="name" placeholder="Иван">
+    <label>Телефон</label>
+    <input name="phone" placeholder="+7 999 123-45-67">
+    <input type="hidden" name="sub1" value="demo">
+    <button type="submit">Заказать</button>
+  </form>
+    <div id="comebacker">
+      <div class="close-undermodal"></div>
+      <div class="over-window">
+        <div class="close-over"></div>
+        <div class="title-comebacker">
+          <div>Подождите!</div>
+          Только сегодня: 990 руб.
+          <div>Скидка 50%</div>
+        </div>
+        <div class="form">
+          <form method="post" action="">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="phone" placeholder="Телефон">
+            <input type="submit" name="submit" value="Заказать">
+          </form>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div></main><script src="/vendor/jquery.js"></script><script src="comebacker/script.js"></script></body></html>

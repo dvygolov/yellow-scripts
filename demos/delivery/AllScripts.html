@@ -1,0 +1,121 @@
+<!-- Всплывающая плашка с посетителями//-->
+<link type = "text/css" rel = "stylesheet" href = "/buyers.css">
+<script type = "text/javascript"> $(function () {
+		setTimeout(function () {
+			LANDING.showSaleTips();
+			setInterval(LANDING.showSaleTips, landing_notifiers.params.delay)
+		}, 10000)
+	});
+</script >
+
+<!-- Панель посетителей сверху-->
+ <body class="hasVisitorsPanel">
+	<div id="visitors-panel">
+		<ul class="visitors-info"> 
+			<li class="visitors-today">
+				<i class="vis-ico"><img src="/all.png" alt=""></i> Посетителей сегодня: <span>1489</span>
+			</li>
+			<li class="visitors-now">
+				<i class="vis-ico"><img src="/now.png" alt=""></i> Сейчас на сайте: <span>87</span>
+			</li>
+			<li class="visitors-buy">
+				<i class="vis-ico"><img src="/buy.png" alt=""></i> Покупок сегодня: <span>111</span>
+			</li>
+		</ul>
+	</div>
+</body>
+ <link type = "text/css" rel = "stylesheet" href = "/visitors.css" >
+<script type = "text/javascript"> $(function () {
+		LANDING.showVisitorsPanel();
+	});
+</script>
+
+<!-- Всплывающая плашка - в вашем городе действует быстрая доставка-->
+<script>
+landing_notifiers.params = { 
+		city			: "{_city:ru}",
+		landDir			: "gardenin_fatflex_16",
+		sex				: "1",
+		multiply		: "2" || 0,
+		no_price		: "" || false,
+		delay			: ("" * 1000) || 12000,
+		price			: price || 0,
+		currency		: currency || "руб.",
+		delivery_price	: delivery_price,
+		geoKey			: "RU" || "RU",
+		zdorov			: "" || false
+	};
+</script>
+<link type="text/css" rel="stylesheet" href="delivery.css">
+<script type="text/javascript">$(function(){LANDING.showDeliveryPopup()});</script>
+
+<!-- Цена заморожена -->	
+<link type="text/css" rel="stylesheet" href="/freezer.css">
+<script type="text/javascript">$(function(){LANDING.showFreezer()});</script>
+
+<!-- Месячная распродажа -->	
+<link href="/css.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="style-ms.css">
+<div id="month_sale_bar">
+	<div id="month_sale_bar_container">
+		<h3 class="title"><script type="text/javascript">d = new Date();monthA = 'Январская,Февральская,Мартовская,Апрельская,Майская,Июньская,Июльская,Августовская,Сентябрьская,Октябрьская,Ноябрьская,Декабрьская'.split(',');document.write(monthA[d.getMonth()]);</script> распродажа</h3>
+		<p class="month_sale--inner">скидки от <span>50%</span></p>
+		<button type="button" class="month_sale_bar-button" 
+				onclick="document.getElementById('form').scrollIntoView();">заказать со скидкой</button>
+		<span class="close-icon"
+				onclick="document.getElementById('month_sale_bar').style.display='none';">×</span>
+	</div>
+</div>
+<script src="/script-ms.js"></script>
+
+<!-- Callback hunter -->	
+<link rel="stylesheet" href="/style_002.css">
+<script type="text/javascript" src="/script.js"></script>
+<div id="cbkr" style="display: block;">
+    <a title="Перезвонить Вам" modal="cbkr_form">
+        <div class="cbkr-circle"></div>
+        <div class="cbkr-circle-fill"></div>
+        <div class="cbkr-img-circle"></div>
+    </a>
+</div>
+<div id="cbkr_form" class="callbackHunter_Popup-Modal m1modal" style="display: none;">
+    <div id="m1-form">
+        <a class="close-m1 icon-close"></a>
+        <div>
+            <div class="popup-m1-title">
+                Вам понравилось это предложение?
+            </div>
+            <div class="popup-m1-cont">
+                <div class="popup-m1-text1">
+                    Мы расскажем Вам все об этом товаре, предложим 
+наилучшие условия и ознакомим с подходящими акционными предложениями!
+                </div>
+                <form action="/order" class="popup-m1-form orderformcdn" method="post">
+                                           <input type="hidden" name="country" value="0">
+                                        <input name="name" placeholder="Введите ваше имя" required="" type="text"><input type="hidden" id="ts_check" name="ts_check" value="48bf5115276f57d5e9de67ba5c38a023">
+                    <input name="phone" placeholder="Введите телефон" required="" type="text">
+                    <div class="errField"></div>
+                    <button>Перезвоните мне</button>
+                    <input type="hidden" name="address" value="">
+                    <input type="hidden" name="product_count" id="product_count" value="1">
+                    <input type="hidden" name="number_product" value="2518">
+                    <input type="checkbox" checked="checked" style="position: absolute;left: -9999px; opacity: 0;">
+                    
+<input type="hidden" name="split_test_id" value="0">
+<input type="hidden" name="split_test" value="0">
+<input type="hidden" name="split_test_host" value="p.vip.slim-gardenin.com">
+<input type="hidden" name="fchck" value="3e0c33bd7e40f030b845ea51ccadedda6823400f">
+<input type="hidden" name="ucfi" id="ucfi" value="0">
+                </form>
+                <div class="popup-m1-text2">
+                    Оператор перезвонит Вам через 5-10 минут
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	var cbkr_popup = "" || false;
+</script>
+

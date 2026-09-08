@@ -1,0 +1,11 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Плавающая кнопка заказа</title><link rel="stylesheet" href="/demo.css"><script src="/demo-common.js"></script></head><body><main>
+    <div style="height:260px"></div>
+    <form id="orderBlock" class="order-form" action="/api.php" method="post">
+    <label>Имя</label>
+    <input name="name" placeholder="Иван">
+    <label>Телефон</label>
+    <input name="phone" placeholder="+7 999 123-45-67">
+    <input type="hidden" name="sub1" value="demo">
+    <button type="submit">Заказать</button>
+  </form>
+    <div class="sticky-order"><a href="#orderBlock">Заказать сейчас</a></div></main></body></html>

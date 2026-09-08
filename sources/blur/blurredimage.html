@@ -1,0 +1,50 @@
+<html>
+<body>
+
+<style>
+.blurcontainer{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.blurimg{
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+.imgtext {
+	font-size: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+</style>
+
+<div class="blurcontainer">
+	<img class="blurimg" src="unblur.png">
+	<div class="imgtext">Click Me!</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+	document.querySelectorAll('div.blurcontainer').forEach(function (item) { 
+		item.addEventListener('click', function () {
+			let img=item.querySelector('img');
+			let txt=item.querySelector('div.imgtext');
+			if(img.classList.contains('blurimg')){
+				img.classList.remove('blurimg');
+				txt.style.visibility='hidden';
+			}
+			else{
+				img.classList.add('blurimg');
+				txt.style.visibility='visible';
+			}
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

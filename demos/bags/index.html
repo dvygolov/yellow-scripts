@@ -1,0 +1,13 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Мешки / 3 из 5</title><link rel="stylesheet" href="/demo.css"><script src="/demo-common.js"></script></head><body><main><div id="bagsBlock"></div><div id="realForm"><form id="orderBlock" class="order-form" action="/api.php" method="post">
+    <label>Имя</label>
+    <input name="name" placeholder="Иван">
+    <label>Телефон</label>
+    <input name="phone" placeholder="+7 999 123-45-67">
+    <input type="hidden" name="sub1" value="demo">
+    <button type="submit">Заказать</button>
+  </form></div></main><script src="ywb3from5.js"></script><script>
+    init3from5({
+      selectors:{ bags:"#bagsBlock", form:"#realForm" },
+      texts:{ title:"Откройте 3 одинаковых изображения и получите скидку", tries:"Осталось попыток:" }
+    });
+  </script></body></html>

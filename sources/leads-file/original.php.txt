@@ -1,0 +1,15 @@
+<?
+if($POST){
+	
+	$name = $_POST['name'];
+	$phone = $_POST['phone'];
+	
+	$file = "orders.txt";
+	$message = "Имя: $name \n Телефон: $phone \n Дата и время: $time \n \n ";
+	$save_order = fopen($file, 'a+');
+	fwrite($save_order, $message);
+	fclose($save_order);
+
+	header('Location: success.html');
+
+}
