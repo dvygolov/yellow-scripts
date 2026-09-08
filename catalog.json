@@ -430,14 +430,14 @@
     "runtime": "JS",
     "description": "Колесо, результат и открытие формы.",
     "sources": [
-      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/roulette",
+      "https://github.com/dvygolov/YWB.Roulette.JS",
       "https://cpa.rip/stati/roulette-script/"
     ],
     "sourceRevision": null,
     "slug": "roulette",
     "category": "Игровые механики",
     "publicSources": [
-      "https://github.com/dvygolov/yellow-scripts/tree/main/demos/roulette",
+      "https://github.com/dvygolov/YWB.Roulette.JS",
       "https://cpa.rip/stati/roulette-script/"
     ],
     "version": "1.0.0",
