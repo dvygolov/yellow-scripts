@@ -1,8 +1,8 @@
 .freezing-wrap{position:fixed;top:55px;right:0;z-index:9999;min-height:198px;width:330px;overflow:hidden;padding-bottom:10px; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;}
-.freezing-info{width:329px;height:125px;position:relative;background:url(/files/_blocks/notificators/img/freezer/buyer-bg.png) no-repeat;box-sizing:border-box;padding:10px 30px;-webkit-transform:translate(110%,0);-ms-transform:translate(110%,0);transform:translate(110%,0);margin-top:27px}
+.freezing-info{width:329px;height:125px;position:relative;background:url(freezer/buyer-bg.png) no-repeat;box-sizing:border-box;padding:10px 30px;-webkit-transform:translate(110%,0);-ms-transform:translate(110%,0);transform:translate(110%,0);margin-top:27px}
 .freezing-active .freezing-info{-webkit-animation:buyShow 1s ease-out forwards;animation:buyShow 1s ease-out forwards}
 .freezing-hide .freezing-info{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);-webkit-animation:buyHide 1.5s ease-out forwards;animation:buyHide 1.5s ease-out forwards}
-.freezing-info:before{content:"";position:absolute;height:198px;width:280px;top:0;right:0;margin-top:-26px;background:url(/files/_blocks/notificators/img/freezer/buyer-ice.png) no-repeat;opacity:0}
+.freezing-info:before{content:"";position:absolute;height:198px;width:280px;top:0;right:0;margin-top:-26px;background:url(freezer/buyer-ice.png) no-repeat;opacity:0}
 .freezing-active .freezing-info:before{-webkit-animation:iceShow 2s ease-out 1.5s forwards;animation:iceShow 2s ease-out 1.5s forwards}
 .freezing-info--title{color:#000;z-index:2;position:relative;text-transform:none;white-space:nowrap;font-size:18px;font-weight: 700;margin-bottom: 5px;}
 .freezing-info--price{color:#02aced;z-index:2;position:relative;margin-left:3px;line-height:22px;font-size:16px;}

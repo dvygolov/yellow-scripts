@@ -1,39 +1,39 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Крипто-калькулятор</title><link rel="stylesheet" href="/demo.css"><script src="/demo-common.js"></script></head><body><main><!--Calculator start-->
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Крипто-калькулятор</title><link rel="stylesheet" href="/demo.css"><script src="/demo-common.js"></script><meta name="yellow-demo" content="ready"></head><body><main><!--Calculator start-->
 <div class="container-calc">
-	<h2 style="text-align: center; font-weight: bold; color: #e8e8e8; margin-bottom: 20px; margin-top: 0;">Here you can calculate your net income</h2>
+	<h2 style="text-align: center; font-weight: bold; color: #e8e8e8; margin-bottom: 20px; margin-top: 0;">Расчёт по заданному коэффициенту</h2>
 	<div class="calc-body">
 		<div class="logo-block"> <span>ExtraCalc v3.5</span>
 		</div>
 		<div class="calc-screen">
-			<div class="calc-operation"> <span class="no-title">The minimum deposit amount is $250</span>
+			<div class="calc-operation"> <span class="no-title">Исходная сумма, $ (от 250)</span>
 			</div>
 			<div class="calc-typed">
-				<input class="input" min="250" id="screenInput" name="number1" type="text" size="10" maxlength="4" placeholder="0$" value="">
+				<input class="input" min="250" aria-label="Исходная сумма в долларах" id="screenInput" name="number1" type="text" size="10" maxlength="4" placeholder="0$" value="">
 			</div>
 		</div>
 		<div class="calc-buuton">
-			<button class="button" onclick="showresult('1')">Calculate</button>
+			<button class="button" onclick="showresult('1')">Рассчитать</button>
 		</div>
 		<div class="сalc-main">
-			<div class="calc-operation"> <span class="title">Your earnings will be like that:</span>
+			<div class="calc-operation"> <span class="title">Результат: сумма × 1,25 × число дней</span>
 			</div>
 			<div class="calc-result-block">
 				<div class="result-block">
-					<div class="text-b">In one day</div>
+					<div class="text-b">1 день</div>
 					<div class="count-b" id="j-res">
 						<div id="j-res1">0</div>
 						<div class="doll">$</div>
 					</div>
 				</div>
 				<div class="result-block">
-					<div class="text-b">In one week</div>
+					<div class="text-b">7 дней</div>
 					<div class="count-b" id="j-res">
 						<div id="j-res2">0</div>
 						<div class="doll">$</div>
 					</div>
 				</div>
 				<div class="result-block">
-					<div class="text-b">In one month</div>
+					<div class="text-b">30 дней</div>
 					<div class="count-b j-res" id="j-res">
 						<div id="j-res3">0</div>
 						<div class="doll">$</div>
@@ -54,7 +54,7 @@ function showresult() {
     let r2;
     let r3;
     if (!Number.isInteger(numScreen)) {
-        alert("The minimum deposit amount is $250");
+        alert("Исходная сумма, $ (от 250)");
         document.getElementById("j-res1").innerText = "0";
         document.getElementById("j-res2").innerText = "0";
         document.getElementById("j-res3").innerText = "0";
@@ -63,7 +63,7 @@ function showresult() {
             item.classList.remove("active");
         }
     } else if (Number.isInteger(numScreen) & (numScreen < 250)) {
-        alert("The minimum deposit amount is $250");
+        alert("Исходная сумма, $ (от 250)");
         document.getElementById("screenInput").value = "250";
         outRes(250);
     } else {
@@ -250,7 +250,7 @@ function showresult() {
     let r2;
     let r3;
     if (!Number.isInteger(numScreen)) {
-        alert("The minimum deposit amount is $250");
+        alert("Исходная сумма, $ (от 250)");
         document.getElementById("j-res1").innerText = "0";
         document.getElementById("j-res2").innerText = "0";
         document.getElementById("j-res3").innerText = "0";
@@ -259,7 +259,7 @@ function showresult() {
             item.classList.remove("active");
         }
     } else if (Number.isInteger(numScreen) & (numScreen < 250)) {
-        alert("The minimum deposit amount is $250");
+        alert("Исходная сумма, $ (от 250)");
         document.getElementById("screenInput").value = "250";
         outRes(250);
     } else {

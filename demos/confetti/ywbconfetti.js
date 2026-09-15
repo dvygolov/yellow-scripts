@@ -57,6 +57,7 @@ class Confetti {
           pointer-events: none;
           position: fixed;
           top: 0;
+          left: 0;
       }
     `;
     document.head.appendChild(style);
@@ -92,10 +93,13 @@ class Confetti {
   }
 
   start(duration = 4000) {
+    clearTimeout(this.stopTimer);
+    const running = this.isActive || !this.animationComplete;
+    this.populateParticles();
     this.isActive = true;
-    this.animate();
+    if (!running || !this.animationFrame) this.animate();
 
-    setTimeout(() => {
+    this.stopTimer = setTimeout(() => {
       this.deactivate();
     }, duration);
   }
@@ -107,7 +111,7 @@ class Confetti {
     this.particles.forEach((p) => p.draw());
     this.updateParticles();
 
-    requestAnimationFrame(() => this.animate());
+    this.animationFrame = requestAnimationFrame(() => this.animate());
   }
 
   updateParticles() {
@@ -138,6 +142,8 @@ class Confetti {
   }
 
   stop() {
+    cancelAnimationFrame(this.animationFrame);
+    this.animationFrame = null;
     this.animationComplete = true;
     this.ctx.clearRect(0, 0, this.width, this.height);
   }
@@ -195,7 +201,9 @@ function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+const autoConfetti = document.currentScript?.dataset.auto !== 'false';
 document.addEventListener("DOMContentLoaded", () => {
+  if (!autoConfetti) return;
   const confetti = new Confetti();
   confetti.start();
 });

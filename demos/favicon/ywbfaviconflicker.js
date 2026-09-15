@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function startFlickering() {
+    clearInterval(flickerInterval);
     let visible = true;
     flickerInterval = setInterval(function() {
       if (visible) {
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Initially, draw the original favicon
+  window.faviconFlicker = {start: startFlickering, stop: stopFlickering};
   drawOriginalFavicon();
   setFavicon().href = canvas.toDataURL("image/x-icon");
 

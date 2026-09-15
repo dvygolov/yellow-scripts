@@ -24,10 +24,11 @@ class Comment {
 	}
 
 	uploadFile(file) {
+		if (!file) return;
 		// провераяем тип файла
 		if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
 			alert('Solo se permiten imágenes.');
-			formImage.value = '';
+			this.formImage.value = '';
 			return;
 		}
 		// проверим размер файла (<2 Мб) 
@@ -49,7 +50,7 @@ class Comment {
 
 	formImageChange() {
 		this.formImage.addEventListener('change', () => {
-			if(this.formImage.files[0])this.uploadFile(this.formImage.files[0]);
+			this.uploadFile(this.formImage.files[0]);
 		});
 	}
 
@@ -87,13 +88,23 @@ class Comment {
 	}
 
 	domOnloader() {
-		document.addEventListener("DOMContentLoaded", () => {
-			let commArr = localStorage['commArr'];
-			if (commArr) {
-				this.commArrAll = JSON.parse(localStorage.getItem('commArr'));
-				commentPushBlock.innerHTML = this.commArrAll.join('');
-			}
-		});
+		const restore = () => {
+			try {
+				const saved = JSON.parse(localStorage.getItem('commArr') || '[]');
+				if (!Array.isArray(saved)) return;
+				this.commArrAll = saved.filter(value => typeof value === 'string');
+				// The legacy renderer stores HTML; strip executable elements and attributes.
+				const template = document.createElement('template');
+				template.innerHTML = this.commArrAll.join('');
+				template.content.querySelectorAll('*').forEach(el => { if (!['DIV','SPAN','P','STRONG','B','EM','I','IMG','A','TIME','BR'].includes(el.tagName)) el.remove(); });
+				template.content.querySelectorAll('*').forEach(el => [...el.attributes].forEach(a => {
+					if (!['class','src','href','alt','datetime','title'].includes(a.name) || (['src','href'].includes(a.name) && !/^(https?:|data:image\/(png|jpeg|gif);base64,|[./#])/i.test(a.value))) el.removeAttribute(a.name);
+				}));
+				this.commentPushBlock.replaceChildren(template.content);
+			} catch {}
+		};
+		if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', restore, {once:true});
+		else restore();
 	}
 }
 /////////////////////////////////////////////////////////////////////////
