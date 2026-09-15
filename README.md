@@ -25,4 +25,4 @@
 
 Рулетка: [YWB.Roulette.JS](https://github.com/dvygolov/YWB.Roulette.JS). Остальные источники указаны в `catalog.json` и на страницах каталога.
 
-Авторы библиотек сохраняют свои права. Лицензии jQuery, Inputmask, Slick и Lucide находятся в `vendor/licenses`. Исходная графика рулетки: CPARIP. Фотографии для эффектов: Unsplash, `photo-1464822759023-fed622ff2c3b` и `photo-1501785888041-af3ef285b470`.
+Авторы библиотек сохраняют свои права. Лицензии jQuery, Inputmask, Slick и Lucide находятся в `vendor/licenses`. Фотографии для эффектов: Unsplash, `photo-1464822759023-fed622ff2c3b` и `photo-1501785888041-af3ef285b470`.

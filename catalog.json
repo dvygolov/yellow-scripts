@@ -450,21 +450,19 @@
   },
   {
     "id": 12,
-    "title": "Рулетка CPARIP / WheelSpin",
+    "title": "Рулетка YWB.Roulette.JS",
     "runtime": "JS",
     "description": "Колесо, результат и открытие формы.",
     "sources": [
-      "https://github.com/dvygolov/YWB.Roulette.JS",
-      "https://cpa.rip/stati/roulette-script/"
+      "https://github.com/dvygolov/YWB.Roulette.JS"
     ],
-    "sourceRevision": "5cb4ad0abab9e2fef009174e1a59989a35c46f10",
+    "sourceRevision": "633bc63662c2eb573704f26fd8b591dfc83b83a6",
     "slug": "roulette",
     "category": "Игровые механики",
     "publicSources": [
-      "https://github.com/dvygolov/YWB.Roulette.JS",
-      "https://cpa.rip/stati/roulette-script/"
+      "https://github.com/dvygolov/YWB.Roulette.JS"
     ],
-    "version": "rev. 5cb4ad0",
+    "version": "rev. 633bc63",
     "demo": true,
     "demoKind": "YWB Roulette",
     "instructions": [

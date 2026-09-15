@@ -1,4 +1,4 @@
-/* Yellow Scripts 1.0.0. CPARIP wheel artwork; standalone init API. */
+/* YWB.Roulette.JS 1.0.0. Standalone init API. */
 (function(global){
   const instances=new WeakMap();
   function initRoulette(options={}){
